@@ -4,25 +4,66 @@
     <meta charset="UTF-8">
     <title>My Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <script src="/index.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="main_nav">
+      <nav class="navbar">
+        <div class="nav_left">
+          <a href="/">Sudarshan</a>
+        </div>
+        <div class="link_div">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <!-- <button class="contact">Contact</button> -->
+        </div>
       </nav>
-    </header>
-    <main>
-      <h1>Welcome to My Website!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </main>
-    <footer>
-      <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
+    </div>
+
+    <div class="container">
+            <div class="child">
+              <h1 class="h1">Sudarshan Gautam</h1>
+            <h3 class="h3">I'm a 
+              <span
+              class="typer"
+              id="words"
+              data-words="Developer.,Student.,Gamer.,a Cool Guy."
+              data-delay="100"
+              data-colors="#fff">
+            </span> </span>
+            <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id">
+            </span>
+            </h3>
+            </div>
+    </div>
+    <div class="social-icons">
+      <ul>
+        <li><a href="#" data-title="Facebook"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#" data-title="Discord"><i class="bi bi-discord"></i></a></li>
+        <li><a href="#" data-title="Twitter"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="#" data-title="Github"><i class="bi bi-github"></i></a></li>
+        <li><a href="#" data-title="Spotify"><i class="bi bi-spotify"></i></a></li>
+        <li><a href="#" data-title="Easter_Egg"><i class="bi bi-fullscreen-exit"></i></a></li>
+      </ul>
+    </div>
+    <script>
+var typed = new Typed('#words', {
+  strings: ['developer', 'coder', 'student'],
+  typeSpeed: 80,
+  backSpeed: 30,
+  loop: true,
+  loopCount: Infinity,
+});
+    </script>
+          
   </body>
 </html>
