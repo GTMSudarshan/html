@@ -2,35 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <title>Sudarshan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
     <script src="/index.js"></script>
-    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
   </head>
   <body>
-    <div class="main_nav">
-      <nav class="navbar">
-        <div class="nav_left">
-          <a href="/">Sudarshan</a>
-        </div>
-        <div class="link_div">
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <!-- <button class="contact">Contact</button> -->
-        </div>
-      </nav>
-    </div>
-
-    <div class="container">
+    <div id="fullpage">
+      <div class="section">
+    <div class="home_div">
+          <div class="main_nav" id="home">
+        <nav class="navbar">
+          <div class="nav_left">
+            <a href="/">GTMSudarshan</a>
+          </div>
+          <div class="link_div">
+            <ul class="nav-links">
+              <li class="links"><a href="#home">Home</a></li>
+              <li class="links"><a href="#about">About</a></li>
+              <li class="links"><a href="#resume">Resume</a></li>
+              <li class="links"><a href="#portfolio">Portfolio</a></li>
+              <li class="links"><a href="#blog">Blog</a></li>
+              <li class="links"><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- <button class="contact">Contact</button> -->
+          </div>
+        </nav>
+      </div>
+    <section class="container">
             <div class="child">
+              <h1 class="ello">Ello Me is:</h1>
               <h1 class="h1">Sudarshan Gautam</h1>
             <h3 class="h3">I'm a 
               <span
@@ -42,9 +47,11 @@
             </span> </span>
             <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id">
             </span>
-            </h3>
+            <h6 class="h6"><span>Lets See some Space</span></h6>
+            <button id ='space_btn' class="space_btn">Space</button>
             </div>
-    </div>
+            <h1 id="about" style="margin-top: 25px; position: absolute; top: 160%;"  ></h1>
+    </section>
     <div class="social-icons">
       <ul>
         <li><a href="#" data-title="Facebook"><i class="bi bi-facebook"></i></a></li>
@@ -55,15 +62,80 @@
         <li><a href="#" data-title="Easter_Egg"><i class="bi bi-fullscreen-exit"></i></a></li>
       </ul>
     </div>
+    </div>
+    </div>
+    <h1 style="margin: 30px;"></h1>
+    <section>
+      <div class="s1_div">
+        <h3 style=" margin-bottom: -5px;">Get to Know me:</h3>
+        <img src="/img/sad.jpg" alt="Profile_Pic" class="profile">
+        <div class="about_div">
+          <ul>
+        <li>Me is Sudarshan Gautam</li>
+        <li>Me is a Cool Boy</li>
+        <li>Me likes games and mostly Minecraft, why? I dont know</li>
+        <li>Me do some random programming to look cool infont of nerds.</li>
+        <li>Me likes to eat Chips and Loves Meat.</li>
+        </ul>
+      </div>
+      </div> 
+      </section>
+    <section class="sections" data-aos="fade-up">
+      <h1>Section 2</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos commodi incidunt eaque! Temporibus distinctio delectus at nesciunt dolores nam facilis non ipsum sit. Error deserunt sunt debitis. Perspiciatis, quae!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint voluptate libero blanditiis laborum nemo vero obcaecati? Adipisci, provident! Fugit iste fugiat placeat possimus. Expedita similique itaque ea animi! Ducimus.</p>
+    </section>
+    <section class="sections" data-aos="fade-up">
+      <h1>Section 3</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos commodi incidunt eaque! Temporibus distinctio delectus at nesciunt dolores nam facilis non ipsum sit. Error deserunt sunt debitis. Perspiciatis, quae!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint voluptate libero blanditiis laborum nemo vero obcaecati? Adipisci, provident! Fugit iste fugiat placeat possimus. Expedita similique itaque ea animi! Ducimus.</p>
+   
+    </section>
+    <section class="sections" data-aos="fade-up">
+      <h1>Section 4</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos commodi incidunt eaque! Temporibus distinctio delectus at nesciunt dolores nam facilis non ipsum sit. Error deserunt sunt debitis. Perspiciatis, quae!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint voluptate libero blanditiis laborum nemo vero obcaecati? Adipisci, provident! Fugit iste fugiat placeat possimus. Expedita similique itaque ea animi! Ducimus.</p>
+   
+    </section>
+    <section class="sections" data-aos="fade-up">
+      <h1>Section 5</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos commodi incidunt eaque! Temporibus distinctio delectus at nesciunt dolores nam facilis non ipsum sit. Error deserunt sunt debitis. Perspiciatis, quae!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint voluptate libero blanditiis laborum nemo vero obcaecati? Adipisci, provident! Fugit iste fugiat placeat possimus. Expedita similique itaque ea animi! Ducimus.</p>
+   
+    </section>
+  </div>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script>
-var typed = new Typed('#words', {
-  strings: ['developer', 'coder', 'student'],
-  typeSpeed: 80,
-  backSpeed: 30,
-  loop: true,
-  loopCount: Infinity,
-});
-    </script>
-          
-  </body>
+      var typed = new Typed('#words', {
+        strings: ['developer', 'coder', 'student'],
+        typeSpeed: 80,
+        backSpeed: 30,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script> 
+      <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          easing: "ease-out-cubic",
+          duration: 800,
+          once: true,
+        });
+      </script> -->
+      <script>
+        const li=document.querySelectorAll(".links");
+        const sec=document.querySelectorAll("section");
+
+        function activeMenu(){
+          let len=sec.length;
+          while(--len && window.scrollY +94 < sec[len].offsetTop){}
+          li.forEach(ltx => ltx.classList.remove("active"));
+          li[len].classList.add('active');
+        }
+        activeMenu();
+        window.addEventListener("scroll",activeMenu);
+      </script>
+            <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+</body>
 </html>
