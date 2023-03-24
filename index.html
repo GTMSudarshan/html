@@ -14,7 +14,8 @@
   <body>
     <div id="fullpage">
       <div class="section">
-    <div class="home_div">
+    <div class="home_div" id="shooting-star">
+      <div id="shooting-star"></div>
           <div class="main_nav" id="home">
         <nav class="navbar">
           <div class="nav_left">
@@ -37,18 +38,18 @@
             <div class="child">
               <h1 class="ello">Ello Me is:</h1>
               <h1 class="h1">Sudarshan Gautam</h1>
-            <h3 class="h3">I'm a 
+            <h3 class="h3">a 
               <span
               class="typer"
               id="words"
-              data-words="Developer.,Student.,Gamer.,a Cool Guy."
+              data-words="Developer.,Googler,Student.,Gamer., Cool Guy."
               data-delay="100"
               data-colors="#fff">
             </span> </span>
             <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id">
             </span>
-            <h6 class="h6"><span>Lets See some Space</span></h6>
-            <button id ='space_btn' class="space_btn">Space</button>
+            <h6 class="h6"><span>Let's Explore</span></h6>
+            <!-- <button id ='space_btn' class="space_btn">Space</button> -->
             </div>
             <h1 id="about" style="margin-top: 25px; position: absolute; top: 160%;"  ></h1>
     </section>
@@ -65,20 +66,48 @@
     </div>
     </div>
     <h1 style="margin: 30px;"></h1>
-    <section>
+    <section class="sections" id="sections">
+      <div class="m1_s1_div">
       <div class="s1_div">
-        <h3 style=" margin-bottom: -5px;">Get to Know me:</h3>
-        <img src="/img/sad.jpg" alt="Profile_Pic" class="profile">
+
+      <div class="profilediv"><img src="/img/Profilepiclu.png" alt="Profile_Pic" class="profile"></div>
         <div class="about_div">
-          <ul>
-        <li>Me is Sudarshan Gautam</li>
-        <li>Me is a Cool Boy</li>
-        <li>Me likes games and mostly Minecraft, why? I dont know</li>
-        <li>Me do some random programming to look cool infont of nerds.</li>
-        <li>Me likes to eat Chips and Loves Meat.</li>
-        </ul>
+          <h3 style=" margin-bottom: 10px;   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 100; font-size: 20px;" >Get to Know me:</h3>
+
+          <h1>Cool Web Designer with Some Random Skills  </h1>
+        <div class="para_div">
+          <p>
+          I'm a 17-year-old boy living in Nepal, and I'm currently a student studying +2 science. My passion lies in web development, and I'm dedicated to pursuing a career in this field. I love the challenge of creating innovative and engaging websites that are both functional and aesthetically pleasing.
+        </p>
+        <p>
+          Thank you for taking the time to learn a bit about me. I hope you enjoy browsing through my portfolio and checking out some of my web development projects.
+        </p>
+        </div>
+        <address class="content-info">
+          <div class="row">
+            <div class="single-info">
+              <p> <span>Name: </span> Sudarshan Gautam</p>
+              </div>
+              <p><span>Email:</span>
+                <a href="mailto:realgtm2062@gmail.com">realgtm2062@gmail.com</a>
+                  </p>
+          </div>
+          <div class="row">
+            <div class="single-info">
+              <p><span>Age:<span id="age">17</span></span></p>
+          </div>
+          <div class="single-info">
+            <p>
+            <span>From:</span>
+            Kathmandu,Nepal
+          </p>
+          </div>  
+          </div>
+        </address>
+        <button class="cv_btn">Download CV</button>
       </div>
       </div> 
+      </div>  
       </section>
     <section class="sections" data-aos="fade-up">
       <h1>Section 2</h1>
@@ -105,15 +134,6 @@
     </section>
   </div>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <script>
-      var typed = new Typed('#words', {
-        strings: ['developer', 'coder', 'student'],
-        typeSpeed: 80,
-        backSpeed: 30,
-        loop: true,
-        loopCount: Infinity,
-      });
-    </script> 
       <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
       <script>
         AOS.init({
@@ -135,7 +155,14 @@
         activeMenu();
         window.addEventListener("scroll",activeMenu);
       </script>
-            <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-
+      <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+      <script>
+        // JavaScript code to calculate age
+        var birthDate = new Date('September 8, 2005');
+        var ageDiff = Date.now() - birthDate.getTime();
+        var ageDate = new Date(ageDiff);
+        var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+        document.getElementById("age").textContent = age;
+      </script>              
 </body>
 </html>
