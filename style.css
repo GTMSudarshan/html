@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Quicksand:wght@500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Roboto+Slab:wght@100;200;300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   color:white;
+  font-family: "Poppins", sans-serif;
+
 }
 #fullpage{
   height: 100%;
@@ -42,6 +44,18 @@ p{
   html {
     scroll-behavior: smooth;
   }
+}
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
+.show{
+  opacity: 1;
 }
 /* body {
   background: linear-gradient(to bottom, #212121, #424242,black);
@@ -109,7 +123,7 @@ a:hover {
 }
 .nav-links li a {
   position: relative;
-  color: #ffffff;
+  /* color: #ffffff; */
   text-decoration: none;
 }
 
@@ -449,13 +463,16 @@ right:0;
 } */
 .sections {
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
   width: 100%;
   padding:  40px 10%;
   }
+.sections{
+  height: 200vh;
+  align-items:start;
+}
 
 /* .profile {
   width: 200px;
@@ -470,10 +487,13 @@ right:0;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Roboto Slab', serif;
 }
-#sections .s1_div{
+.m1_s1_div .s1_div{
 display: grid;
 grid-template-columns: 1fr 6fr;
 grid-gap: 70px;
+}
+.s1_div{
+  padding: 20px;
 }
 .s1_div .profilediv{
   position: relative;
@@ -487,7 +507,12 @@ grid-gap: 70px;
   object-fit: cover;
   position: relative;
   z-index: 2;
+  transition: transform 0.3s ease-in-out;
 
+
+}
+.profilediv img:hover{
+  transform: rotate(3deg);
 }
 .s1_div .profilediv::after{
   position: absolute;
@@ -547,4 +572,229 @@ address{
   border-radius: 25px;
   color: #fff;
   background-color: rgb(117, 26, 10);
+}
+button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border: 1px solid #2662ae;
+  border-radius: 47px;
+  background: #3ea0ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3ea0ff), to(#2662ae));
+  background: -moz-linear-gradient(top, #3ea0ff, #2662ae);
+  background: linear-gradient(to bottom, #3ea0ff, #2662ae);
+  -webkit-box-shadow: #3a94ff 0px 0px 21px 1px;
+  -moz-box-shadow: #3a94ff 0px 0px 21px 1px;
+  box-shadow: #3a94ff 0px 0px 21px 1px;
+  text-shadow: #183e6d 0px -1px 10px;
+  font: normal normal bold 20px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus {
+  border: 1px solid #307bda;
+  background: #4ac0ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4ac0ff), to(#2e76d1));
+  background: -moz-linear-gradient(top, #4ac0ff, #2e76d1);
+  background: linear-gradient(to bottom, #4ac0ff, #2e76d1);
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:active {
+  background: #2662ae;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2662ae), to(#2662ae));
+  background: -moz-linear-gradient(top, #2662ae, #2662ae);
+  background: linear-gradient(to bottom, #2662ae, #2662ae);
+}
+.button:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 10px;
+  line-height: 24px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/*Ghost*/
+#ghost {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+/*End of Ghost*/
+.service_div_container h4{
+  font-family: unset;
+  font-family: 'Lucida Sans';
+}
+/*Services*/
+.service_div_container{
+  margin-top: 40px;
+  /* align-items: center; */
+  /* display: flex; */
+  font: 25px;
+  /* justify-content: center; */
+}
+
+.service_div_container p{
+  font-size: 26px;
+}
+.box h3{
+letter-spacing: 1.4px;
+
+}
+
+.div_box_content 
+{
+  margin-top: 23px;
+	position: relative;
+	width: 90%;
+
+    display: flex;
+
+    grid-auto-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+
+.div_box_content .box
+{  
+	position: relative;
+	height: 400px;
+    margin-left: 2%;
+	background: #060c21;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+}
+
+.div_box_content .box:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	transform: skew(2deg,2deg);
+	z-index: -1;
+}
+
+.div_box_content .box:nth-child(1):before
+{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+
+.div_box_content .box:nth-child(2):before
+{
+    background: linear-gradient(315deg,#89ff00,#00bcd4)
+
+}
+
+.div_box_content .box:nth-child(3):before
+{
+    background: linear-gradient(315deg,#e91e63,#5d02ff)
+}
+
+.div_box_content .box:nth-child(4):before
+{
+    background: linear-gradient(315deg,#ff0000,#ffc107)
+}
+
+.div_box_content .box:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255.0.05);
+	pointer-events: none;
+}
+
+
+.content
+{
+	position: relative;
+	padding: 20px;
+	transform: translateY(40px);
+}
+
+.box .content h2
+{
+	position: absolute;
+	top: -60px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 10em;
+	color: rgb(255,255,255,.05);
+	transition: 0.5s;
+}
+
+.box:hover .content h2
+{
+	top: -140px;
+}
+
+.box .content h3
+{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.box .content p
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+}
+
+.box .content a
+{
+	position: relative;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	display: inline-block;
+	color: #fff;
+	transition: 0.5s;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content a
+{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.box .content a:hover
+{
+	color: #000;
+	background: #fff;
+}
+
+.content:hover:first-child{
+  /* transform: rotate(-3deg); */
+
+}
+.content:hover,.box:hover{
+  transform: rotateZ(-5deg);
 }
