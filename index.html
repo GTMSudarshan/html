@@ -132,7 +132,7 @@
         <div class="box">
           <div class="content">
             <h2>02</h2>
-            <h3>Programming languages:</h3>
+            <h3>Programming:</h3>
             <p>
               
               I am familiar with Python and JavaScript,
@@ -147,7 +147,7 @@
         <div class="box">
           <div class="content">
             <h2>03</h2>
-            <h3>Soft skills</h3>
+            <h3>Soft skills:</h3>
             <p>
               
               I am a detail-oriented individual with strong problem-solving skills, 
@@ -162,10 +162,51 @@
       </div>
       </div>
       </section>
-    <section class="sections" data-aos="fade-up">
-      <h1>Section 2</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos commodi incidunt eaque! Temporibus distinctio delectus at nesciunt dolores nam facilis non ipsum sit. Error deserunt sunt debitis. Perspiciatis, quae!</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sint voluptate libero blanditiis laborum nemo vero obcaecati? Adipisci, provident! Fugit iste fugiat placeat possimus. Expedita similique itaque ea animi! Ducimus.</p>
+    <section class="sections">
+      <h1>Resume</h1>
+      <h3 style="font-weight: 100; margin-top:20px;">Education</h3>
+      <div class="resume_div">
+        <div class="div_education">
+          <h4>2008-2022</h4>
+          <h3>Secondary School Degree</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Culpa deleniti temporibus 
+            eligendi veritatis eum similique nulla. 
+            Natus quis ab, quae cum, officiis voluptatum 
+            veritatis et sed illo inventore quam non.</p>
+
+        </div>
+        <div class="div_education">
+          <h4>2022-2024</h4>
+          <h3>Higher School Degree</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Culpa deleniti temporibus 
+            eligendi veritatis eum similique nulla. 
+            Natus quis ab, quae cum, officiis voluptatum 
+            veritatis et sed illo inventore quam non.</p>
+        </div>
+    </div>
+      <h3 style="font-weight: 100;">Experience</h3>
+      <div class="resume_div">
+        <div class="div_education">
+          <h4>2021-Now</h4>
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Culpa deleniti temporibus 
+            eligendi veritatis eum similique nulla. 
+            Natus quis ab, quae cum, officiis voluptatum 
+            veritatis et sed illo inventore quam non.</p>
+        </div>
+        <div class="div_education">
+          <h4>2022-2024</h4>
+          <h3>Higher School Degree</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Culpa deleniti temporibus 
+            eligendi veritatis eum similique nulla. 
+            Natus quis ab, quae cum, officiis voluptatum 
+            veritatis et sed illo inventore quam non.</p>
+        </div>
+    </div>
     </section>
     <section class="sections" data-aos="fade-up">
       <h1>Section 3</h1>
@@ -216,6 +257,79 @@
         var ageDate = new Date(ageDiff);
         var age = Math.abs(ageDate.getUTCFullYear() - 1970);
         document.getElementById("age").textContent = age;
-      </script>              
+      </script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+           
+      <script>
+let knowme = document.querySelector(".s1_div");
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  knowme,
+  {
+    opacity: 0,
+    x: "-50vw"
+  },
+  {
+    opacity: 1,
+    x: 0,
+    ease: "none",
+    scrollTrigger: {
+      trigger: knowme,
+      scrub: 2,
+      start: "top center",
+      end: "top center-=200",
+      // markers:"true",
+
+    },
+  }
+);
+
+let aptitudes =document.querySelector(".service_div");
+  gsap.registerPlugin(ScrollTrigger)
+  gsap.fromTo(
+    aptitudes,{
+      opacity:0,
+      y:"-60px"
+    },
+    {
+      opacity:1,
+      y:"0",
+      ease:"none",
+      scrollTrigger:{
+      trigger:aptitudes,
+      scrub:1,
+      start:"top center",
+      end:"top center-=300",
+      }
+
+    }
+  );
+const boxContainers = document.querySelectorAll(".div_box_content");
+
+// Animate each box container
+gsap.fromTo(
+  boxContainers, {
+    opacity: 0,
+    z: "-100vh"
+  }, {
+    opacity: 1,
+    z: "0",
+    ease: "none",
+    scrollTrigger: {
+      trigger: boxContainers,
+      scrub: 3,
+      start: "top center",
+      end: "top center-=220",
+      // markers:"true",
+    }
+  }
+);
+
+ </script>  
+
+      
 </body>
 </html>

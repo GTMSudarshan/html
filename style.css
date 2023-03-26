@@ -47,7 +47,7 @@ p{
 }
 .hidden{
   opacity: 0;
-  transition: all 1s;
+  transition: all 3s;
 }
 @media(prefers-reduced-motion){
   .hidden{
@@ -562,7 +562,7 @@ address{
   font: unset;
   font-family: Lucida Sans;
 }
-.cv_btn{
+/* .cv_btn{
   outline-style: none;
   font-family: Lucida Sans;
   margin-top: 5px;
@@ -572,7 +572,7 @@ address{
   border-radius: 25px;
   color: #fff;
   background-color: rgb(117, 26, 10);
-}
+} */
 button {
   display: inline-block;
   text-align: center;
@@ -587,7 +587,7 @@ button {
   background: linear-gradient(to bottom, #3ea0ff, #2662ae);
   -webkit-box-shadow: #3a94ff 0px 0px 21px 1px;
   -moz-box-shadow: #3a94ff 0px 0px 21px 1px;
-  box-shadow: #3a94ff 0px 0px 21px 1px;
+  box-shadow: #293a50 0px 0px 21px 1px;
   text-shadow: #183e6d 0px -1px 10px;
   font: normal normal bold 20px arial;
   color: #ffffff;
@@ -797,4 +797,17 @@ letter-spacing: 1.4px;
 }
 .content:hover,.box:hover{
   transform: rotateZ(-5deg);
+}
+/*Finish of About*/
+
+
+/*RESUME*/
+.resume_div{
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 10px;
+  display:flex;
+  flex-direction: column;
+  
+  gap: 20px;
 }
