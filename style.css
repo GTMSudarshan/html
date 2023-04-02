@@ -467,9 +467,8 @@ right:0;
   align-items: center;
   font-size: 1.2em;
   width: 100%;
-  padding:  40px 10%;
-  
-  }
+  padding:  40px 10%;  
+}
 .sections{
   height: 200vh;
   align-items:start;
@@ -884,4 +883,25 @@ letter-spacing: 1.4px;
 @keyframes java{
   0% { width: 0; }
   100% { width: 15%; }
+}
+/*END OF ABOUT*/
+
+
+/*START OF PORTFOLIO*/
+.portfolio_a{
+  font-weight: bold;
+  font-size: 23px;
+  color: chartreuse;
+}
+.portfolio_container{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr); 
+  gap: 20px;
+  height: 300px;
+  margin-top: 20px;
+}
+.portfolio_contents{
+  background: #00bcd4;
+
 }
