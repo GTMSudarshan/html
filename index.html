@@ -25,7 +25,7 @@
             <ul class="nav-links">
               <li class="links"><a href="#home">Home</a></li>
               <li class="links"><a href="#about">About</a></li>
-              <li class="links"><a href="#resume">Resume</a></li>
+              <!-- <li class="links"><a href="#resume">Resume</a></li> -->
               <li class="links"><a href="#portfolio">Portfolio</a></li>
               <li class="links"><a href="#blog">Blog</a></li>
               <li class="links"><a href="#contact">Contact</a></li>
@@ -73,7 +73,7 @@
         <div class="about_div">
           <h3 style=" margin-bottom: 10px;   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 100; font-size: 20px;" >Get to Know me:</h3>
 
-          <h1>Cool Web Designer with Some Random Skills  </h1>
+          <h1>Cool Web Designer with Some Great Skills  </h1>
         <div class="para_div">
           <p>
           I'm a 17-year-old boy living in Nepal, and I'm currently a student studying +2 science. My passion lies in web development, and I'm dedicated to pursuing a career in this field. I love the challenge of creating innovative and engaging websites that are both functional and aesthetically pleasing.
@@ -110,6 +110,7 @@
       <div class="service_div">
         <p>My Services & Skills:
         </p>
+        <span style="opacity: 50%;">Services:</span>
       </div>
       <div class="div_box_content">
         <div class="box" >
@@ -159,10 +160,6 @@
         </div>
       </div>
       </div>
-      <div class="sk_h1">
-        <br>
-        <br>
-      </div>
       <!-- <h1 class="sk54">Skills:</h1>
       <br>
         <div class="ski-about">
@@ -198,61 +195,54 @@
                 </div>
                 </div>
                 </div> -->
-                <div class="card_container">
-                  <div class="card">
-                    <h3 class="title">Card 1</h3>
-                    <div class="bar">
-                      <div class="emptybar"></div>
-                      <div class="filledbar" data-fill="82"></div>
-                    </div>
-                    <div class="circle">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <h3 class="title">Card 2</h3>
-                    <div class="bar">
-                      <div class="emptybar"></div>
-                      <div class="filledbar" data-fill="72"></div>
-                    </div>
-                    <div class="circle">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <h3 class="title">Card 3</h3>
-                    <div class="bar">
-                      <div class="emptybar"></div>
-                      <div class="filledbar" data-fill="54"></div>
-                    </div>
-                    <div class="circle">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <h3 class="title">Card 4</h3>
-                    <div class="bar">
-                      <div class="emptybar"></div>
-                      <div class="filledbar" data-fill="43"></div>
-                    </div>
-                    <div class="circle">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stroke" cx="60" cy="60" r="50"/>
-                      </svg>
-                    </div>
+                <div class="main_center">
+                  <h1>My Skills:</h1>
+                <div class="center">
+                  <div>
+                  <h1>HTML</h1>
+                <div class="progress">
+                  <div class="progress-value html">
                   </div>
                 </div>
-                
-                
-
+              </div>
+              <div>
+                <h1>CSS</h1>
+              <div class="progress">
+                <div class="progress-value css">
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1>JavaScript</h1>
+            <div class="progress">
+              <div class="progress-value js">
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1>ReactJS</h1>
+          <div class="progress">
+            <div class="progress-value react">
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>C & C++</h1>
+        <div class="progress">
+          <div class="progress-value c">
+          </div>
+        </div>
       </div>
-      </section>
+        <div>
+          <h1>Java</h1>
+        <div class="progress">
+          <div class="progress-value java">
+          </div>
+        </div>
+      </div>
+        </div>
+        </div>  
+    </section>
     <section class="sections">
 
     </section>
@@ -375,33 +365,9 @@ gsap.fromTo(
     }
   }
 );
-const skiAbout = document.querySelectorAll(".ski-about");
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.fromTo(
-  skiAbout,
-  {
-    opacity: 0,
-    y: "10vh"
-  },
-  {
-    opacity: 1,
-    y: 0,
-    ease: "none",
-    scrollTrigger: {
-      trigger: skiAbout,
-      scrub: 2,
-      start: "top center",
-      end: "top center-=40",
-      markers:"true",
-
-    },
-  }
-);
-let eskills =document.querySelectorAll(".sk54");
+let main_center =document.querySelectorAll(".main_center");
   gsap.fromTo(
-    eskills,{
+    main_center,{
       opacity:0,
       y:"-60px"
     },
@@ -410,7 +376,7 @@ let eskills =document.querySelectorAll(".sk54");
       y:"0",
       ease:"none",
       scrollTrigger:{
-      trigger:eskills,
+      trigger:main_center,
       scrub:1,
       start:"top center",
       end:"top center-=300",
